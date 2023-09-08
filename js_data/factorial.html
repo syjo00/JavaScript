@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var number = prompt("숫자를 입력")
+
+function factorial(number) {
+        if(number == 1) {
+            return number;
+        } else {
+            return number * factorial(number-1);
+        }
+    }
+
+    
+    document.write(factorial(number)); //120출력
+
+    </script>
+</body>
+</html>

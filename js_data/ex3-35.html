@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for~in</title>
+</head>
+<body>
+   <script>
+        var info ={
+            subject : 'javascript',
+            credit : 3,
+            days : 20,
+            tuition :1000
+        };
+
+        for(var i in info){
+            console.log(i+':'+info[i]);
+        }
+
+        /*[출력내용]
+        
+        subject:javascript
+        ex3-35.html:18 credit:3
+        ex3-35.html:18 days:20
+        ex3-35.html:18 tuition:1000               
+        
+        */
+
+   </script> 
+</body>
+</html>

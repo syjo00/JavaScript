@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json사용하여 오브젝트를 문자열로 변환,문자열을 오브젝트로 변환</title>
+</head>
+<body>
+    <script>
+       //json을 사용하여 오브제트를 문자열로 변환
+
+       
+        // 객체 생성
+        var myObject = {
+        name: "John",
+        age: 30,
+        city: "New York"
+        };
+
+        // 객체를 JSON 문자열로 변환
+        var jsonString = JSON.stringify(myObject);
+
+        // 결과 출력
+        document.write(jsonString);
+
+        
+       //json을 사용하여 문자열을 오브젝트로 변환
+        // JSON 문자열
+        var jsonString = '{"name":"John","age":30,"city":"New York"}';
+
+        // JSON 문자열을 객체로 변환
+        var myObject = JSON.parse(jsonString);
+
+        // 결과 출력
+        document.write(myObject);
+
+
+
+    </script>
+</body>
+</html>
