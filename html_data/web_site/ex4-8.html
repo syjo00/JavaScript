@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta>form 필터 선택자</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        //460page 
+        $(document).ready(function(){
+
+            $("input:text").css("background","red");
+            $("input:password").css("background","orange");
+            $(":button").css("background","yellow");
+            $("input:checkd + label").css("background","green");
+            $("option:selected").css("color","blue");
+            $("textarea:disabled").css("color","blue");          
+            
+        });
+
+    </script>
+</head>
+<body>
+        <div><input type="text"></div>
+        <div><input type="password"></div>
+        <div><button>확인</button></div>
+        <div><input type="checkbox" id="css" checked="checked"><label for="css">css</label></div>
+        <div>
+            <select>
+                <option>과목선택</option>
+                <option>javascript</option>
+                <option selected="selected">jquery</option>
+            </select>
+            <textarea cols="20" rows="5" disabled="disabled">javascript</textarea>
+        </div>
+</body>
+</html>
